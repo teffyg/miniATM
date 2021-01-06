@@ -1,0 +1,13 @@
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.exe
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.deps.json
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.runtimeconfig.json
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.runtimeconfig.dev.json
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.dll
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\bin\Debug\netcoreapp3.1\miniATM.pdb
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.csprojAssemblyReference.cache
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.AssemblyInfoInputs.cache
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.AssemblyInfo.cs
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.csproj.CoreCompileInputs.cache
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.dll
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.pdb
+D:\RepositorioGH\PROGRAMACION-Tutorial_Intensivo_2020\Extras\Csharp\miniATM\obj\Debug\netcoreapp3.1\miniATM.genruntimeconfig.cache
