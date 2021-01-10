@@ -5,12 +5,11 @@ namespace miniATM
     public class Account
     {
         int id;
-        int amount;
+        uint amount;
         int maxWithdrawal;
 
         public Account()
         {
-            Console.WriteLine("clase account working");
             Random rnd = new Random();
             id = rnd.Next(0,9999);
             amount = 0;
@@ -21,25 +20,27 @@ namespace miniATM
         {
             return id;
         }
-        public int getAmount()
+        public uint getAmount()
         {
             return amount;
         }
 
-        public int Withdraw(int value)
+        public uint Withdraw(uint value)
         {
-            if(value<=amount&&value<=maxWithdrawal)
+            if(value<=amount && value<=maxWithdrawal)
             {
             amount = amount - value;
-            } else {
-                Console.Write("El monto excede los limites permitidos");
-            }
+            } 
+            else 
+            {
+                Console.WriteLine("El monto excede los limites permitidos");
+            } 
             return amount;
         }
 
-        public int Deposit(int value)
-        {
-            amount+= value;
+        public uint Deposit(uint value)
+        {   
+            amount = amount + value;
             return amount;
         }
     }
