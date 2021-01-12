@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 
 
-namespace miniATM
+namespace DataLib.Models
 {
     public class User
     {

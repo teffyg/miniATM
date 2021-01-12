@@ -1,6 +1,6 @@
 using System;
 
-namespace miniATM
+namespace DataLib.Models
 {
     public class Account
     {

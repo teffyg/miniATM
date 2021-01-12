@@ -3,3 +3,5 @@
 ################################################################################
 
 /.vs/miniATM/v16/Server/sqlite3
+/DataLib/bin/Debug/netstandard2.0
+/DataLib/obj

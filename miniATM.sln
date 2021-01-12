@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "miniATM", "miniATM.csproj", "{B325B71F-4A3D-4845-9E5B-D5BA933034A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "miniATM", "miniATM\miniATM.csproj", "{4FDF6FA8-8913-4B74-ACCA-FBDE645B5269}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataLib", "DataLib\DataLib.csproj", "{8EF06711-E81E-4E13-A82E-82BE280CA9C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B325B71F-4A3D-4845-9E5B-D5BA933034A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B325B71F-4A3D-4845-9E5B-D5BA933034A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B325B71F-4A3D-4845-9E5B-D5BA933034A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B325B71F-4A3D-4845-9E5B-D5BA933034A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FDF6FA8-8913-4B74-ACCA-FBDE645B5269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FDF6FA8-8913-4B74-ACCA-FBDE645B5269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FDF6FA8-8913-4B74-ACCA-FBDE645B5269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FDF6FA8-8913-4B74-ACCA-FBDE645B5269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EF06711-E81E-4E13-A82E-82BE280CA9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EF06711-E81E-4E13-A82E-82BE280CA9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EF06711-E81E-4E13-A82E-82BE280CA9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EF06711-E81E-4E13-A82E-82BE280CA9C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

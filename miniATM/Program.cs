@@ -1,5 +1,9 @@
-﻿using System;
+﻿using DataLib;
+using DataLib.Interfaces;
+using DataLib.Models;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace miniATM
 {
@@ -7,21 +11,20 @@ namespace miniATM
     {
         static void Main(string[] args)
         {
-            User currentUser = null;
-            User user1 = new User("tioSam", 1234);
-            User user2 = new User("uncleBob", 6789);
-            user1.accountList.Add(new Account());
-                
-            var userList = new List<User>()
-            {
-                user1,
-                user2
-            };
+            User currentUser;
+            IDataManager dataManager;
+            //inicializar dataManager
+            // obtener la lista de usuarios
+            User[] userList = new User[] { };
+
             while (true)
             {
                 Console.WriteLine("Insert your username");
                 var inputUser = Console.ReadLine();
-                currentUser = userList.Find(x => x.username == inputUser);
+                currentUser = userList
+                    .Where(x => x.username == inputUser)
+                    .FirstOrDefault();
+
                 if (currentUser == null)
                 {
                     Console.WriteLine("Invalid user");
