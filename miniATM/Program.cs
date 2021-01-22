@@ -76,8 +76,8 @@ namespace miniATM
                                     Console.WriteLine("Invalid Account \n");
                                 } else { 
                                     Console.WriteLine("Insert amount");
-                                    uint amount;
-                                    var amountInput = uint.TryParse(Console.ReadLine(),out amount);
+                                    decimal amount;
+                                    var amountInput = decimal.TryParse(Console.ReadLine(),out amount);
 
                                     switch (option)
                                     {
@@ -85,7 +85,14 @@ namespace miniATM
                                             currentAccount.Deposit(amount);
                                             break;
                                         case DisplayMenu.Withdrawal:
-                                            currentAccount.Withdraw(amount);
+                                            try
+                                            {
+                                                currentAccount.Withdraw(amount);
+                                            }
+                                            catch (Exception)
+                                            {
+                                                Console.WriteLine("El monto excede los limites permitidos \n");
+                                            }
                                             break;
                                     } // semicolon? -- no
 

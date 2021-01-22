@@ -5,7 +5,7 @@ namespace DataLib.Models
     public class Account
     {
         int id;
-        uint amount;
+        decimal amount;
         int maxWithdrawal;
 
         public Account()
@@ -20,12 +20,12 @@ namespace DataLib.Models
         {
             return id;
         }
-        public uint getAmount()
+        public decimal getAmount()
         {
             return amount;
         }
 
-        public uint Withdraw(uint value)
+        public decimal Withdraw(decimal value)
         {
             if(value<=amount && value<=maxWithdrawal)
             {
@@ -33,12 +33,12 @@ namespace DataLib.Models
             } 
             else 
             {
-                Console.WriteLine("El monto excede los limites permitidos");
+                 throw new Exception();
             } 
             return amount;
         }
 
-        public uint Deposit(uint value)
+        public decimal Deposit(decimal value)
         {   
             amount = amount + value;
             return amount;
