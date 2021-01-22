@@ -4,9 +4,9 @@ namespace DataLib.Models
 {
     public class Account
     {
-        int id;
-        decimal amount;
-        int maxWithdrawal;
+        public int id;
+        public decimal amount;
+        public int maxWithdrawal;
 
         public Account()
         {
@@ -27,21 +27,32 @@ namespace DataLib.Models
 
         public decimal Withdraw(decimal value)
         {
-            if(value<=amount && value<=maxWithdrawal)
+            if (!IsNegative(value))
             {
-            amount = amount - value;
-            } 
-            else 
-            {
-                 throw new Exception();
-            } 
+                if(value<=amount && value<=maxWithdrawal)
+                {
+                amount = amount - value;
+                } 
+                else 
+                {
+                     throw new Exception();
+                } 
+            }
             return amount;
         }
 
         public decimal Deposit(decimal value)
-        {   
-            amount = amount + value;
+        {
+            if (!IsNegative(value))
+            {
+                amount = amount + value;
+            }
             return amount;
+        }
+
+        static bool IsNegative(decimal value)
+        {
+            return value < 0;
         }
     }
 }

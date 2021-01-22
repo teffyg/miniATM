@@ -1,0 +1,4 @@
+[{"username":"teffy","_pin":1234,"accountList":[{"id":2006,"amount":0.0,"maxWithdrawal":1000}]},
+{"username":"tioSam","_pin":1234,"accountList":[{"id":3618,"amount":0.0,"maxWithdrawal":1000}]},
+{"username":"teffyg","_pin":1234,"accountList":[{"id":7293,"amount":0.0,"maxWithdrawal":1000}]},
+{"username":"uncleBob","_pin":1234,"accountList":[{"id":9464,"amount":0.0,"maxWithdrawal":1000}]}]

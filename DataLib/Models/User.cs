@@ -7,12 +7,12 @@ namespace DataLib.Models
     public class User
     {
         public string username; //lo declare public para poder hacer el find(), sin tener q definir un get?
-        private int _pin;
+        public int _pin; //public para poder grabar los datos en el file, otra forma?
         public List<Account> accountList;
 
         public User()
         {
-            Console.WriteLine("clase user working");
+
         }
 
         public User(string user, int pin)

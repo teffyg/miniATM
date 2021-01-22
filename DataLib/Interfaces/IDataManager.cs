@@ -23,6 +23,6 @@ namespace DataLib.Interfaces
         /// </summary>
         /// <param name="userId"></param>
         /// <param name="account"></param>
-        void UpdateUserAccountData(int userId, Account account);
+        void UpdateUserAccountData(string username, Account account);
     }
 }

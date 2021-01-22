@@ -70,27 +70,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estefania\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Teffy Giordano\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\estefania\\source\\repos\\miniATM\\miniATM\\miniATM.csproj",
+      "projectUniqueName": "C:\\Users\\Teffy Giordano\\source\\repos\\miniATM\\miniATM\\miniATM.csproj",
       "projectName": "miniATM",
-      "projectPath": "C:\\Users\\estefania\\source\\repos\\miniATM\\miniATM\\miniATM.csproj",
-      "packagesPath": "C:\\Users\\estefania\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\estefania\\source\\repos\\miniATM\\miniATM\\obj\\",
+      "projectPath": "C:\\Users\\Teffy Giordano\\source\\repos\\miniATM\\miniATM\\miniATM.csproj",
+      "packagesPath": "C:\\Users\\Teffy Giordano\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Teffy Giordano\\source\\repos\\miniATM\\miniATM\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\estefania\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\Teffy Giordano\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -101,9 +94,10 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\estefania\\source\\repos\\miniATM\\DataLib\\DataLib.csproj": {
-              "projectPath": "C:\\Users\\estefania\\source\\repos\\miniATM\\DataLib\\DataLib.csproj"
+            "C:\\Users\\Teffy Giordano\\source\\repos\\miniATM\\DataLib\\DataLib.csproj": {
+              "projectPath": "C:\\Users\\Teffy Giordano\\source\\repos\\miniATM\\DataLib\\DataLib.csproj"
             }
           }
         }
@@ -116,6 +110,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -131,7 +126,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
