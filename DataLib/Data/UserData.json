@@ -1,0 +1,13 @@
+[
+    {
+        "username": "estefania",
+        "_pin": 1234,
+        "accountList": [
+            {
+                "id": 6889,
+                "amount": 0.0,
+                "maxWithdrawal": 1000
+            }
+        ]
+    }
+]

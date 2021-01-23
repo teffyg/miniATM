@@ -13,12 +13,10 @@ namespace DataLib
     {
         private User[] _fileData;
         //setear path del archivo
-        private const string FILE_PATH = "usersData.txt";
+        private const string FILE_PATH = "Data/UserData.json";
 
         public DataManager() 
-        { 
-            if (!File.Exists(FILE_PATH))
-                File.Create(FILE_PATH);
+        {
             //leer el contenido del archivo
             string text = File.ReadAllText(FILE_PATH);
             _fileData = JsonConvert.DeserializeObject<User[]>(text);
