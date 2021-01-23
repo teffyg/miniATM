@@ -68,8 +68,6 @@ namespace miniATM
                                 }
                             } while (!isValid);
 
-                            //option = (DisplayMenu)DisplayOptions();
-
                             if (option == DisplayMenu.Exit)
                             {
                                 dataManager.SaveData();

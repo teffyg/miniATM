@@ -43,7 +43,6 @@ namespace DataLib
         public void UpdateUserAccountData(string username, Account account)
         {
             //busco el User a traves del username que paso como parametro
-
             var currentUser = Array.Find(_fileData, elem => elem.username.ToLower() == username.ToLower());
             //obtengo el index de la Account en el currentUser
             var indexAcc = currentUser.accountList.IndexOf(account);
