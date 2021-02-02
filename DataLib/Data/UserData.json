@@ -1,0 +1,24 @@
+[
+  {
+    "username": "estefania",
+    "_pin": 1234,
+    "accountList": [
+      {
+        "id": 6889,
+        "amount": 0.0,
+        "maxWithdrawal": 1000
+      }
+    ]
+  },
+  {
+    "username": "teffyg",
+    "_pin": 1234,
+    "accountList": [
+      {
+        "id": 3128,
+        "amount": 0.0,
+        "maxWithdrawal": 1000
+      }
+    ]
+  }
+]

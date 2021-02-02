@@ -13,12 +13,10 @@ namespace DataLib
     {
         private User[] _fileData;
         //setear path del archivo
-        private const string FILE_PATH = "usersData.txt";
+        private const string FILE_PATH = "Data/UserData.json";
 
         public DataManager() 
-        { 
-            if (!File.Exists(FILE_PATH))
-                File.Create(FILE_PATH);
+        {
             //leer el contenido del archivo
             string text = File.ReadAllText(FILE_PATH);
             _fileData = JsonConvert.DeserializeObject<User[]>(text);
@@ -45,8 +43,7 @@ namespace DataLib
         public void UpdateUserAccountData(string username, Account account)
         {
             //busco el User a traves del username que paso como parametro
-
-            var currentUser = Array.Find(_fileData, elem => elem.username.ToLower() == username.ToLower());
+            var currentUser = Array.Find(_fileData, elem => elem.Username.ToLower() == username.ToLower());
             //obtengo el index de la Account en el currentUser
             var indexAcc = currentUser.accountList.IndexOf(account);
             //asigno el valor de account que paso como parametro en la ubicacion donde esta la cuenta a actualizar en accountList

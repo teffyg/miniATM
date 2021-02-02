@@ -25,7 +25,7 @@ namespace miniATM
                 //valida si existe el usuario
                 var inputUser = Console.ReadLine();
                 currentUser = userList
-                    .Where(x => x.username == inputUser)
+                    .Where(x => x.Username == inputUser)
                     .FirstOrDefault();
 
                 if (currentUser == null)
@@ -44,7 +44,7 @@ namespace miniATM
                     }
                     else
                     {
-                        Console.WriteLine($"Welcome {currentUser.username}");
+                        Console.WriteLine($"Welcome {currentUser.Username}");
                         foreach (var item in currentUser.accountList)
                         {
                             Console.WriteLine("Account: " + item.getId() + " Total: " + item.getAmount());
@@ -68,13 +68,12 @@ namespace miniATM
                                 }
                             } while (!isValid);
 
-                            //option = (DisplayMenu)DisplayOptions();
-
                             if (option == DisplayMenu.Exit)
                             {
                                 dataManager.SaveData();
                                 Console.Clear();
-                            } else
+                            } 
+                            else
                             {
                                 //ingreso y validacion de la cuenta
                                 Console.WriteLine("Select Account");
@@ -89,19 +88,17 @@ namespace miniATM
                                     Console.WriteLine("Insert amount");
                                     decimal amount;
                                     var amountInput = decimal.TryParse(Console.ReadLine(),out amount);
-
-
                                     switch (option)
                                     {
                                         case DisplayMenu.Deposit: 
                                             currentAccount.Deposit(amount);
-                                            dataManager.UpdateUserAccountData(currentUser.username, currentAccount);
+                                            dataManager.UpdateUserAccountData(currentUser.Username, currentAccount);
                                             break;
                                         case DisplayMenu.Withdrawal:
                                             try
                                             {
                                                 currentAccount.Withdraw(amount);
-                                                dataManager.UpdateUserAccountData(currentUser.username, currentAccount);
+                                                dataManager.UpdateUserAccountData(currentUser.Username, currentAccount);
                                             }
                                             catch (Exception)
                                             {
@@ -119,7 +116,7 @@ namespace miniATM
                                                 int.TryParse(Console.ReadLine(), out receiverAccount);
                                                       //Transfer(amount, currentAccount, receiverName, receiverAccount); // No aplica
                                                 var currentReceiver = userList
-                                                    .Where(x => x.username == receiverName)
+                                                    .Where(x => x.Username == receiverName)
                                                     .FirstOrDefault();
                                                 var recAccount = currentReceiver.accountList.Find(elem => elem.id == receiverAccount);
                                                 if (currentReceiver != null && recAccount != null)
@@ -127,7 +124,7 @@ namespace miniATM
                                                     currentAccount.Withdraw(amount);
                                                     recAccount.Deposit(amount);
                                                     //updateo el sender
-                                                    dataManager.UpdateUserAccountData(currentUser.username, currentAccount);
+                                                    dataManager.UpdateUserAccountData(currentUser.Username, currentAccount);
                                                     //updateo el receiver
                                                     dataManager.UpdateUserAccountData(receiverName, recAccount);
                                                 }

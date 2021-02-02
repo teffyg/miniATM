@@ -31,7 +31,7 @@ namespace DataLib.Models
             {
                 if(value<=amount && value<=maxWithdrawal)
                 {
-                amount = amount - value;
+                    amount = amount - value;
                 } 
                 else 
                 {
@@ -50,7 +50,7 @@ namespace DataLib.Models
             return amount;
         }
 
-        static bool IsNegative(decimal value)
+        static private bool IsNegative(decimal value)
         {
             return value < 0;
         }
