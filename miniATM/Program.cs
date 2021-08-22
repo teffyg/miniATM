@@ -35,7 +35,6 @@ namespace miniATM
                 else
                 {
                     Console.WriteLine("Insert your pin");
-                    //llama al metodo login para comprobar si el pin matchea con el user
                     int inputPin;
                     int.TryParse(Console.ReadLine(),out inputPin);
                     if (!currentUser.login(inputPin))
@@ -61,7 +60,7 @@ namespace miniATM
                                 int intOption;
                                 int.TryParse(Console.ReadLine(),out intOption);
                                 option = (DisplayMenu)intOption;
-                                isValid = Enum.IsDefined(typeof(DisplayMenu), option); // hice esto para poder disparar mensaje de invalid option
+                                isValid = Enum.IsDefined(typeof(DisplayMenu), option); 
                                 if (!isValid)
                                 {
                                     Console.WriteLine("Invalid Option \n"); 
@@ -106,10 +105,9 @@ namespace miniATM
                                             }
                                             break;
                                         case DisplayMenu.Transfer:
-                                            //try
-                                            //{
-                                                //se puede mejorar exceptions handling & amount negativo
-                                                Console.WriteLine("Insert receiver's username");
+                                            try
+                                            {
+                                            Console.WriteLine("Insert receiver's username");
                                                 string receiverName = Console.ReadLine();
                                                 Console.WriteLine("Insert receiver's account number");
                                                 int receiverAccount;
@@ -127,15 +125,15 @@ namespace miniATM
                                                     dataManager.UpdateUserAccountData(currentUser.Username, currentAccount);
                                                     //updateo el receiver
                                                     dataManager.UpdateUserAccountData(receiverName, recAccount);
-                                                }
-                                            //}
-                                            ////catch
-                                            ////{
-                                                ////Console.WriteLine("Oops..something went wrong.. \nTry again\n");
-                                            //}
+                                                } 
+                                            }
+                                            catch
+                                            {
+                                                Console.WriteLine("Oops..something went wrong.. \nTry again\n");
+                                            }
                                             break;
 
-                                    } // semicolon? -- no
+                                    } 
 
                                     foreach (var item in currentUser.accountList)
                                     {
