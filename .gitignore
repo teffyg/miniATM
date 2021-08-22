@@ -16,4 +16,6 @@ bin/
 Bin/
 obj/
 Obj/
+miniATM/obj/*
+miniATM/bin/
 
