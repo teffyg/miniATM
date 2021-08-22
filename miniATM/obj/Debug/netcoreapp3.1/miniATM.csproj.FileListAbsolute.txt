@@ -1,0 +1,17 @@
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\Data\UserData.json
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.exe
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.deps.json
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.runtimeconfig.json
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.runtimeconfig.dev.json
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.dll
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\miniATM.pdb
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\DataLib.dll
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\bin\Debug\netcoreapp3.1\DataLib.pdb
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.AssemblyInfoInputs.cache
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.csproj.CoreCompileInputs.cache
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.csproj.CopyComplete
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.dll
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.pdb
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.genruntimeconfig.cache
+C:\Users\Teffy Giordano\source\repos\miniATM\miniATM\obj\Debug\netcoreapp3.1\miniATM.csproj.AssemblyReference.cache
